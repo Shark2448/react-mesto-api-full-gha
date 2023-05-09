@@ -9,10 +9,6 @@
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Shark2448/express-mesto-gha.git"
-  },
   "author": "Alex Zverev",
   "license": "ISC",
   "dependencies": {
@@ -28,10 +24,6 @@
     "validator": "^13.9.0",
     "winston": "^3.8.2"
   },
-  "bugs": {
-    "url": "https://github.com/Shark2448/express-mesto-gha/issues"
-  },
-  "homepage": "https://github.com/Shark2448/express-mesto-gha#readme",
   "devDependencies": {
     "eslint": "^8.2.0",
     "eslint-config-airbnb-base": "^15.0.0",
