@@ -42,12 +42,12 @@ const deleteCard = (req, res, next) => {
     })
     .then((card) => {
       if (card.owner.toString() === req.user._id) {
-        return Card.deleteOne(card)
+        Card.deleteOne(card)
           .then(() => {
             res.send(card);
           });
       } else {
-        next(new ForbiddenError('У вас нет прав для удаления карточки'));
+      return  next(new ForbiddenError('У вас нет прав для удаления карточки'));
       }
     })
     .catch((err) => {
