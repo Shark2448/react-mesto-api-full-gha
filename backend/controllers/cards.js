@@ -45,7 +45,7 @@ const deleteCard = (req, res, next) => {
         return Card.deleteOne(card)
           .then(() => {
             res.send(card);
-        });
+          });
       }
       return next(new ForbiddenError('У вас нет прав для удаления карточки'));
     })
